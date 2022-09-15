@@ -39,7 +39,19 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description)
 }
 
-  let apiKey = "2d96d64425dca1d6eda00d942a281c0d";
-  let city = "Nairobi"
+function search(city) {
+let apiKey = "2d96d64425dca1d6eda00d942a281c0d";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let searchInputElement = document.querySelector("#search-input")
+    search(searchInputElement.value);
+}
+
+  
+
+  let form = document.querySelector("#search-form");
+  form.addEventListener("submit", handleSubmit);
