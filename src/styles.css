@@ -23,7 +23,7 @@
 
 .weather {
     box-shadow: rgb(144, 166, 181) 0px 8px 8px 0;
-    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
     border-radius: 10px;
     color: #263238;
     
@@ -74,13 +74,25 @@ li {
     height: 64px;
     width: 64px;
 }
-
+a {
+    text-decoration: none;
+}
 
 .weather-temperature .units {
     position: relative;
     font-size: 16px;
     top: 5px;
 }
+
+.weather-temperature .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+
+weather-temperature .active:hover {
+    text-decoration: none;
+}
+
 small {
         text-align: center;
         font-family: monospace;
