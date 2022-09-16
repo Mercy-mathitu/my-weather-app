@@ -23,10 +23,9 @@
 
 .weather {
     box-shadow: rgb(144, 166, 181) 0px 8px 8px 0;
-    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+    background: linear-gradient(180.3deg,rgb(110, 136, 161) 5.5%, rgb(221, 221, 221) 90.2%);
     border-radius: 10px;
     color: #263238;
-    
     padding: 40px;
     
     font-family: 'Lato', sans-serif;
@@ -89,10 +88,28 @@ a {
     cursor: default;
 }
 
-weather-temperature .active:hover {
+.weather-temperature .active:hover {
     text-decoration: none;
 }
 
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(35, 35, 35);;
+}
+
+.weather-forecast-date {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+    font-size: 11px;
+}
 small {
         text-align: center;
         font-family: monospace;
